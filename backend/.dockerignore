@@ -1,0 +1,8 @@
+target/
+.env
+.env.*
+*.pem
+*.key
+uploads/
+src/main/resources/application-local.yml
+.git/

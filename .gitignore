@@ -1,0 +1,22 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+application-local.yml
+
+# Build & dependencies
+backend/target/
+frontend/node_modules/
+frontend/dist/
+uploads/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml

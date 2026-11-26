@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:srpetworld;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+app:
+  jwt:
+    secret: test-jwt-secret-key-minimum-32-bytes-long-for-hs256
+    issuer: sr-pet-world
+    expiration-ms: 1800000
+    refresh-expiration-ms: 604800000
+  cors:
+    allowed-origins: http://localhost:5173
+  razorpay:
+    key-id: rzp_test_mock_key
+    key-secret: rzp_test_mock_secret_key_12345
+    webhook-secret: rzp_webhook_mock_secret_12345
